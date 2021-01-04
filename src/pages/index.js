@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { aboutObj } from '../components/InfoSection/Data';
+import Expertise from '../components/Expertise';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
       <NavBar toggle={toggle} />
       <HeroSection />
       <InfoSection {...aboutObj} />
+      <Expertise />
     </>
   );
 };

@@ -33,7 +33,17 @@ function NavBar({ toggle }) {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='expertise'>Expertise</NavLinks>
+              <NavLinks
+                to='expertise'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+                activeClass='active'
+              >
+                Expertise
+              </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='mywork'>My Work</NavLinks>
