@@ -69,6 +69,9 @@ export const Column2 = styled.div`
     margin-top: -450px;
     transform: scale(0.58);
   }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    transform: scale(0.52);
+  }
 `;
 export const TextWrapper = styled.div`
   max-width: 650px;

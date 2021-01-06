@@ -62,6 +62,10 @@ export const Column1 = styled.div`
     margin-left: 0;
     margin-left: -33px;
   }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    transform: scale(0.9);
+    margin-left: -50px;
+  }
 `;
 export const Column2 = styled.div`
   margin-bottom: 50px;
@@ -71,6 +75,10 @@ export const Column2 = styled.div`
   grid-area: col2;
   @media screen and (max-width: 768px) {
     margin-left: 0;
+  }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    transform: scale(0.9);
+    margin-left: -50px;
   }
 `;
 

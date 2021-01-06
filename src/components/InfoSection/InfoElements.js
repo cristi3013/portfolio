@@ -72,6 +72,9 @@ export const Title = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    margin-top: 0px;
+  }
 `;
 
 export const Paragraph1 = styled.p`
