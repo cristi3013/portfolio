@@ -152,6 +152,93 @@ export const EmailBtnWrapper = styled.div`
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  .nameInput {
+    width: 400px;
+    height: 65px;
+    background: rgba(172, 175, 171, 0.29);
+    border-radius: 13px;
+    border: none;
+    padding: 12px 20px;
+    outline-width: 0;
+  }
+  .emailInput {
+    margin-top: 30px;
+    width: 793px;
+    height: 65px;
+    background: rgba(172, 175, 171, 0.29);
+    border-radius: 13px;
+    border: none;
+    padding: 12px 20px;
+    outline-width: 0;
+    @media screen and (max-width: 768px) {
+      width: 400px;
+      height: 65px;
+    }
+  }
+  .subjectInput {
+    margin-top: 30px;
+    width: 793px;
+    height: 65px;
+    background: rgba(172, 175, 171, 0.29);
+    border-radius: 13px;
+    border: none;
+    padding: 12px 20px;
+    outline-width: 0;
+    @media screen and (max-width: 768px) {
+      width: 400px;
+      height: 65px;
+    }
+  }
+  .messageInput {
+    margin-top: 30px;
+    width: 793px;
+    height: 200px;
+    background: rgba(172, 175, 171, 0.29);
+    border-radius: 13px;
+    border: none;
+    padding: 12px 20px;
+    outline-width: 0;
+    resize: none;
+    @media screen and (max-width: 768px) {
+      width: 400px;
+      height: 100px;
+    }
+  }
+  .btnWrapper {
+    margin-top: 30px;
+
+    margin-left: 10px;
+    align-items: center;
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+    background-color: transparent;
+    max-width: 300px;
+    @media screen and (max-width: 768px) {
+      margin-left: 115px;
+    }
+  }
+  .button {
+    border-radius: 50px;
+    background: ${({ primary }) => (primary ? '#6DB454' : '#010606')};
+    white-space: nowrap;
+    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({ dark }) => (dark ? '#010606' : '#fff')};
+    font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+    outline-style: none;
+    border: none;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background: ${({ primary }) => (primary ? '#fff' : '#6DB454')};
+    }
+  }
 `;
 
 export const ContactInfoWrapper = styled.div`

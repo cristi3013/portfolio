@@ -21,7 +21,13 @@ const MyWork = () => {
       </Title>
       <ProjectWrapper>
         <ProjectCard>
-          <ProjectIcon src={Icon1} />
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://elegant-kirch-a10126.netlify.app/'
+          >
+            <ProjectIcon src={Icon1} />
+          </a>
           <ProjectTitle>Kappa Website</ProjectTitle>
           <ProjectDescription>
             I developed from scratch the Kappa London’s internship page, using

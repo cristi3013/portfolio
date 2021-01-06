@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import {
   InfoContainer,
   InfoWrapper,
@@ -29,6 +30,27 @@ import social2 from '../../images/githubBlack.svg';
 import social3 from '../../images/instagramBlack.svg';
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'default_template',
+        e.target,
+        'user_2XcLlrUNUkAq9DocuNwVE'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  }
   return (
     <>
       <InfoContainer id='contact'>
@@ -39,8 +61,8 @@ const Contact = () => {
           <InfoRow>
             <Column1>
               <InputWrapper>
-                <NameInput placeholder='Name' type='text' name='user_name' />
-                <EmailInput placeholder='Email' type='text' name='user_email' />
+                {/* <NameInput placeholder='Name' type='text' name='name' />
+                <EmailInput placeholder='Email' type='text' name='email' />
                 <SubjectInput
                   placeholder='Subject'
                   type='text'
@@ -53,8 +75,48 @@ const Contact = () => {
                 />
 
                 <EmailBtnWrapper>
-                  <Button>Send Message</Button>
-                </EmailBtnWrapper>
+                  <Button type='submit' value='Send' onClick={sendEmail}>
+                    Send Message
+                  </Button>
+                </EmailBtnWrapper> */}
+                <form onSubmit={sendEmail}>
+                  <input
+                    type='text'
+                    className='nameInput'
+                    placeholder='Name'
+                    name='name'
+                  />
+
+                  <input
+                    type='email'
+                    className='emailInput'
+                    placeholder='Email Address'
+                    name='email'
+                  />
+
+                  <input
+                    type='text'
+                    className='subjectInput'
+                    placeholder='Subject'
+                    name='subject'
+                  />
+
+                  <textarea
+                    className='messageInput'
+                    id=''
+                    cols='30'
+                    rows='8'
+                    placeholder='Your message'
+                    name='message'
+                  ></textarea>
+                  <div className='btnWrapper'>
+                    <input
+                      type='submit'
+                      className='button'
+                      value='Send Message'
+                    ></input>
+                  </div>
+                </form>
               </InputWrapper>
             </Column1>
             <Column2>
