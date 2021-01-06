@@ -21,6 +21,10 @@ export const InfoWrapper = styled.div`
   @media screen and (max-width: 768px) {
     height: 800px;
   }
+  @media screen and (max-width: 480px) {
+    height: 900px;
+    margin-top: 50px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -59,6 +63,11 @@ export const Column2 = styled.div`
     margin-left: -100px;
     margin-top: -700px;
     transform: scale(0.65);
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: -130px;
+    margin-top: -450px;
+    transform: scale(0.58);
   }
 `;
 export const TextWrapper = styled.div`

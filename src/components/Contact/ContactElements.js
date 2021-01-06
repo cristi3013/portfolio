@@ -58,6 +58,10 @@ export const Column1 = styled.div`
     margin-left: 0;
     margin-top: -180px;
   }
+  @media screen and (max-width: 480px) {
+    margin-left: 0;
+    margin-left: -33px;
+  }
 `;
 export const Column2 = styled.div`
   margin-bottom: 50px;
