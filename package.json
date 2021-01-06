@@ -9,6 +9,7 @@
     "react": "^17.0.1",
     "react-animated-progress-bar": "^1.0.4",
     "react-dom": "^17.0.1",
+    "react-elastic-carousel": "^0.10.0",
     "react-icons": "^4.1.0",
     "react-responsive": "^8.2.0",
     "react-router-dom": "^5.2.0",

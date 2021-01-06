@@ -5,6 +5,8 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { aboutObj } from '../components/InfoSection/Data';
 import Expertise from '../components/Expertise';
+import MyWork from '../components/MyWork';
+import Contact from '../components/Contact';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +22,8 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...aboutObj} />
       <Expertise />
+      <MyWork />
+      <Contact />
     </>
   );
 };

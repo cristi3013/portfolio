@@ -19,7 +19,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    height: 1300px;
+    height: 800px;
   }
 `;
 
@@ -35,6 +35,7 @@ export const InfoRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: 'col1 col1' 'col2 col2';
     margin-top: 0;
+    height: 1300px;
   }
 `;
 
