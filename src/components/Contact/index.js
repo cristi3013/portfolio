@@ -7,11 +7,6 @@ import {
   InfoRow,
   Column1,
   Column2,
-  NameInput,
-  EmailInput,
-  SubjectInput,
-  MessageInput,
-  EmailBtnWrapper,
   InputWrapper,
   ContactInfoWrapper,
   Text1,
@@ -24,7 +19,7 @@ import {
   Social2,
   Social3,
 } from './ContactElements';
-import { Button } from '../ButtonElement';
+// import { Button } from '../ButtonElement';
 import social1 from '../../images/linkedInBlack.svg';
 import social2 from '../../images/githubBlack.svg';
 import social3 from '../../images/instagramBlack.svg';
