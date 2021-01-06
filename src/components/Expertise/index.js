@@ -14,6 +14,7 @@ import {
   Name,
   CvBtnWrapper,
 } from './ExpertiseElements';
+import CV from '../../images/CV_Cristian_Vasile_2021.pdf';
 const Expertise = () => {
   return (
     <>
@@ -34,7 +35,7 @@ const Expertise = () => {
                 </Paragraph>
               </TextWrapper>
               <CvBtnWrapper>
-                <a href='../../CV_Cristian_Vasile_2021.pdf' download>
+                <a href={CV} target='_blank' rel='noreferrer'>
                   DOWNLOAD MY RESUME
                 </a>
               </CvBtnWrapper>
