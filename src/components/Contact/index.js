@@ -19,7 +19,6 @@ import {
   Social2,
   Social3,
 } from './ContactElements';
-// import { Button } from '../ButtonElement';
 import social1 from '../../images/linkedInBlack.svg';
 import social2 from '../../images/githubBlack.svg';
 import social3 from '../../images/instagramBlack.svg';
@@ -56,24 +55,6 @@ const Contact = () => {
           <InfoRow>
             <Column1>
               <InputWrapper>
-                {/* <NameInput placeholder='Name' type='text' name='name' />
-                <EmailInput placeholder='Email' type='text' name='email' />
-                <SubjectInput
-                  placeholder='Subject'
-                  type='text'
-                  name='subject'
-                />
-                <MessageInput
-                  placeholder='Message'
-                  type='text'
-                  name='message'
-                />
-
-                <EmailBtnWrapper>
-                  <Button type='submit' value='Send' onClick={sendEmail}>
-                    Send Message
-                  </Button>
-                </EmailBtnWrapper> */}
                 <form onSubmit={sendEmail}>
                   <input
                     type='text'

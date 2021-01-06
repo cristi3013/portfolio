@@ -1,6 +1,5 @@
 import React from 'react';
 import ProgressBar from 'react-animated-progress-bar';
-import { Button } from '../ButtonElement';
 
 import {
   InfoContainer,
@@ -35,17 +34,9 @@ const Expertise = () => {
                 </Paragraph>
               </TextWrapper>
               <CvBtnWrapper>
-                <Button
-                  to='about'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                  color='#6DB454'
-                >
+                <a href='../../CV_Cristian_Vasile_2021.pdf' download>
                   DOWNLOAD MY RESUME
-                </Button>
+                </a>
               </CvBtnWrapper>
             </Column1>
             <Column2>
