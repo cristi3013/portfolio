@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLinks,
 } from './NavBarElements';
+import logo from '../../images/logoAlb.svg';
 
 function NavBar({ toggle }) {
   const [scrollNav, setscrollNav] = useState(false);
@@ -27,7 +28,19 @@ function NavBar({ toggle }) {
     <>
       <Nav scrollNav={scrollNav}>
         <NavBarContainer>
-          <NavLogo to='/'>CV</NavLogo>
+          <NavLogo>
+            <NavLinks
+              to='hero'
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              activeClass='false'
+            >
+              <img className='logo' src={logo} alt='logo' />
+            </NavLinks>
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
